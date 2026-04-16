@@ -14,7 +14,7 @@ public class UseCase3InventorySetup {
         // Display initial inventory
         inventory.displayInventory();
 
-        // Update inventory
+        // Update availability
         System.out.println("\nUpdating Single Room availability...");
         inventory.updateAvailability("Single Room", 4);
 
