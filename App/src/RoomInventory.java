@@ -4,11 +4,10 @@ class RoomInventory {
 
     private HashMap<String, Integer> inventory;
 
-    // Constructor
+    // Constructor to initialize inventory
     RoomInventory() {
         inventory = new HashMap<>();
 
-        // Initialize room availability
         inventory.put("Single Room", 5);
         inventory.put("Double Room", 3);
         inventory.put("Suite Room", 2);
@@ -24,12 +23,12 @@ class RoomInventory {
         inventory.put(roomType, count);
     }
 
-    // Display all rooms
+    // Display inventory
     void displayInventory() {
         System.out.println("===== Room Inventory =====");
 
-        for (String key : inventory.keySet()) {
-            System.out.println(key + " → Available: " + inventory.get(key));
+        for (String room : inventory.keySet()) {
+            System.out.println(room + " → Available: " + inventory.get(room));
         }
     }
 }
